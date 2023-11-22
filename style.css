@@ -411,4 +411,57 @@ footer .footerBox p i {
     font-size: 1rem;
 }
 
+@media screen and (max-width: 1058px)  {
+    nav {
+        padding: 1rem;
+    }
 
+    section {
+        padding: 50px 60px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    section {
+        padding: 50px 4%;
+    }
+
+    .produtosContainer {
+        grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .homeContent {
+        padding-top: 5rem;
+    }
+
+    #burgerMenu {
+        display: block;
+    }
+
+    .navegacao {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        border-right: 1px solid var(--primary-color);
+        width: 280px;
+        height: 100vh;
+        padding: 1rem 2rem;
+        background: var(--background-color);
+        transition: .2s ease-in-out;
+    }
+
+    .navegacao.active {
+        left: 0;
+    }
+
+    .sobre {
+        text-align: center;
+    }
+
+    .sobreNosImg {
+        order: 2;
+    }
+}
