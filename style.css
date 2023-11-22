@@ -351,3 +351,64 @@ nav.active {
 .reviewBox:hover {
     background: rgb(247, 234, 210);
 }
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap: 1rem;
+    padding: 2rem 1rem;
+    background: rgb(247, 234, 210);
+}
+
+footer .socialMedia {
+    display: flex;
+    column-gap: .5rem;
+    margin-top: 1rem;
+}
+
+footer .socialMedia .bx {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: var(--background-color);
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease-in-out;
+}
+
+footer .socialMedia .bx:hover {
+    background: var(--second-color);
+}
+
+footer .footerBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .footerBox h5 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+footer .footerBox a {
+    color: var(--primary-color);
+}
+
+footer .footerBox a:hover {
+    color: var(--second-color);
+}
+
+footer .footerBox p {
+    font-size: 13px;
+}
+
+footer .footerBox p i {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+
