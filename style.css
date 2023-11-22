@@ -218,3 +218,24 @@ nav.active {
         transform: translateY(1rem);
     }
 }
+
+.sobreNos {
+    display: grid;
+    align-items: center;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+}
+
+.sobreNosContent h2 {
+    font-size: clamp(25px, 4vw, 35px);
+}
+
+.sobreNosContent p {
+    font-size: .9rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.sobreNosContent .btn {
+    display: inline-block;
+    margin-top: 2rem;
+}
