@@ -180,3 +180,41 @@ nav.active {
 .searchContent.active {
     right: 1rem;
 }
+
+.home {
+    width: 100%;
+    min-height: 540px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    gap: 1rem;
+    background: rgb(247, 234, 210);
+}
+
+.home h1 {
+    font-size: clamp(30px, 5vw, 60px);
+    letter-spacing: 1px;
+}
+
+.home h1 span {
+    color: var(--primary-color);
+}
+
+.home p {
+    max-width: 80%;
+    font-size: .9rem;
+    margin: 1rem 0 2rem;
+}
+
+.home img {
+    animation: animacao 3s linear infinite;
+}
+
+@keyframes animacao {
+    0%, 100% {
+        transform: translateY(-3.5rem);
+    }
+    50% {
+        transform: translateY(1rem);
+    }
+}
