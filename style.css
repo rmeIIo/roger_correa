@@ -239,3 +239,72 @@ nav.active {
     display: inline-block;
     margin-top: 2rem;
 }
+
+.produtosTitle {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.produtosTitle h2 {
+    font-size: clamp(20px, 4vw, 35px);
+    text-transform: uppercase;
+}
+
+.produtosContainer {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+    gap: 1rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.produtosBox {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 7px;
+    box-shadow: var(--sombra);
+}
+
+.produtosBox img {
+    border-radius: 7px;
+    background: #e2e2e2;
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    object-position: center;
+    transition: .2s ease-in-out;
+}
+
+.produtosBox:hover img {
+    transform: scaleX(-1);
+}
+
+.produtosBox h3 {
+    font-size: clamp(18px, 4vw, 22px);
+}
+
+.produtosBox span {
+    color: var(--primary-color);
+}
+
+.produtosBox .bx {
+    font-size: 1rem;
+    color: var(--background-color);
+    background: var(--primary-color);
+    padding: 1rem;
+    border-radius: 7px 0 7px 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.produtosBox .bx:hover {
+    background: var(--second-color);
+}
